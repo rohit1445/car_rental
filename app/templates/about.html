@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block main %}
+{% load static %}
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">RM CAR RENTAL</span></h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <img class="w-75 mb-4" src="{% static 'img/about.png' %}" alt="">
+                    <p> RM Car Rentals provides a variety of vehicles catering to different preferences and needs, ensuring convenience for both locals and travelers. With our diverse fleet, ranging from compact cars to spacious SUVs, Savaari allows customers to select a vehicle that suits their requirements and budget.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <h4><u><b>Why should you hire a car rental in Hubli?</b></u></h4><br>
+                <p>
+                  Hubli, a thriving city in Karnataka, stands as a testament to progress and development. Despite its dynamic growth, the city faces contemporary challenges in transportation infrastructure, including traffic congestion, limited public transport, and uneven roads, posing obstacles for both locals and visitors. To navigate Hubli's complex urban landscape and explore the picturesque waterfalls around the region, renting a car with a driver emerges as a practical solution. An experienced chauffeur not only expertly handles the city's intricate roads but also serves as a knowledgeable local guide, providing valuable insights into Hubli's attractions and shortcuts, including the mesmerizing waterfalls nearby. This personalized experience ensures a seamless and stress-free journey, allowing travelers to enjoy both the city's charm and the natural beauty of the waterfalls. In contrast, self-driving in an unfamiliar city can be overwhelming and may detract from the overall travel experience. Opting for a chauffeur-driven car provides convenience and transforms the exploration of Hubli and its scenic waterfalls, offering a smooth and enriching way to discover the city's hidden gems and natural wonders.
+                </p>
+                <h4><u><b>Minimum paperwork required</b></u></h4>
+                <p>
+                  We have very minimum paperwork requirement for renting. You only need to have a valid photo ID and a valid driving license with legal driving age.
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-headset text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-car text-secondary"></i>
+                        </div>
+                        <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    {% endblock %}

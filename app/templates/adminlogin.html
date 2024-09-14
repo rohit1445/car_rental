@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/admin.css' %}">
+  <script src="{% static 'js/admin.js' %}"></script>
+</head>
+<body id="login">
+  <div class="login-container">
+    <h1>Admin Login</h1>
+    <form method="post" action="">
+      {% csrf_token %}
+      <div class="input-group">
+        <label for="username">admin name</label>
+        <input type="text" id="name" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+{% if msg %}
+<script>
+    alert('{{msg}}');
+</script>
+{% endif %}
+</body>
+</html>

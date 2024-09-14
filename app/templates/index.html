@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% block main %}
+{% load static %}
+<div class="img-box">
+    <img src="{% static 'img/home.png' %}" alt="" width="100%" height="100%">
+  </div>
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">01</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">RM CAR RENTAL</span></h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <img class="w-75 mb-4" src="{% static 'img/about.png' %}" alt="">
+                    <p> RM Car Rentals provides a variety of vehicles catering to different preferences and needs, ensuring convenience for both locals and travelers. With our diverse fleet, ranging from compact cars to spacious SUVs, Savaari allows customers to select a vehicle that suits their requirements and budget.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-headset text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-car text-secondary"></i>
+                        </div>
+                        <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Rent A Car Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">02</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="{% static 'img/car_17.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4">FORTUNER</h4>
+                        <a class="btn btn-primary px-3" href="{% url 'car' %}">Rs.6500/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item active mb-4">
+                        <img class="img-fluid mb-4" src="{% static 'img/car_19.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4">i20</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                        </div>
+                        <a class="btn btn-primary px-3" href="{% url 'car' %}">Rs.1100/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="{% static 'img/car_12.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4">THAR</h4>
+                        <a class="btn btn-primary px-3" href="{% url 'car' %}">Rs.2300/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="{% static 'img/car_15.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4">INNOVA crysta</h4>
+                        <a class="btn btn-primary px-3" href="{% url 'car' %}">Rs.2000/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="{% static 'img/car_21.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4">BMW X3</h4>
+                        <a class="btn btn-primary px-3" href="{% url 'car' %}">Rs.9000/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="{% static 'img/car_22.png' %}" alt="">
+                        <h4 class="text-uppercase mb-4">i10</h4>
+                        <a class="btn btn-primary px-3" href="{% url 'car' %}">Rs.1000/Day</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rent A Car End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;" id="success">
+                        <form method="post" action="" name="sentMessage">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" name="name" placeholder="Your Name" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" name="email" placeholder="Your Email" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" name="subject" placeholder="Subject" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control py-3 px-4" name="message" rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-2">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Head Office</h5>
+                                <p>Hubli</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Branch Office</h5>
+                                <p>Hubli</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Customer Service</h5>
+                                <p>rohitmallur2001@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Customer Service</h5>
+                                <p class="m-0">7619238594</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+</html>
+{% endblock %}
